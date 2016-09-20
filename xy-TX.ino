@@ -13,6 +13,15 @@ Written 2016-09-20
 /* ==== END Defines ==== */
 
 /* ==== Global Variables ==== */
+struct {
+  int xPos;
+  int yPos;
+  bool aFun;
+  bool bFun;
+  bool cFun;
+}tx;
+
+
 /* ==== END Global Variables ==== */
 
 
@@ -33,10 +42,10 @@ void setup() {
 /* ==== Loop ==== */
 void loop() {
    //write joystick x value to struct member
-   //write joystick x value to struct member
-   //write joystick x value to struct member
-   //write joystick x value to struct member
-   //write joystick x value to struct member
+   //write joystick y value to struct member
+   //write function a value to struct member
+   //write function b value to struct member
+   //write function c value to struct member
 }
 /* ==== End loop ==== */
 
