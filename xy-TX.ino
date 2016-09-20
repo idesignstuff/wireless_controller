@@ -1,26 +1,48 @@
 /*
 This is the transmitter file, with x/y proportional control, x indicator lights
 and x function buttons.
+Written 2016-09-20
+
 */
+/* ==== Includes ==== */
+#include <Wire.h>             // Needed for legacy versions of Arduino.
+/* ====  END Includes ==== */
 
-// begin configs
+/* ==== Defines ==== */
+#define SERIAL_BAUD 115200
+/* ==== END Defines ==== */
 
-//end configs
-
-
-//begin setup
-
-//end setp
-
-
-//begin loop
-
-//end loop
+/* ==== Global Variables ==== */
+/* ==== END Global Variables ==== */
 
 
-//begin functions
+/* ==== Setup ==== */
+void setup() {
+  Serial.begin(SERIAL_BAUD);
+  while(!Serial) {} // Wait
+  while(!bme.begin()){
+    Serial.println("Could not find BME280 sensor!");
+    delay(1000);
+  }
+}
 
-//end functions
+
+/* ==== End setup ==== */
 
 
-//end file
+/* ==== Loop ==== */
+void loop() {
+   //write joystick x value to struct member
+   //write joystick x value to struct member
+   //write joystick x value to struct member
+   //write joystick x value to struct member
+   //write joystick x value to struct member
+}
+/* ==== End loop ==== */
+
+
+/* ==== Functions ==== */
+
+/* ==== End functions ==== */
+
+/* ==== End file ==== */
