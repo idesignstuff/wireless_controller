@@ -29,9 +29,8 @@ struct {
 void setup() {
   Serial.begin(SERIAL_BAUD);
   while(!Serial) {} // Wait
-  while(!bme.begin()){
-    Serial.println("Could not find BME280 sensor!");
-    delay(1000);
+  
+    delay(500);
   }
 }
 
@@ -46,11 +45,28 @@ void loop() {
    //write function a value to struct member
    //write function b value to struct member
    //write function c value to struct member
+   
+   
+   //Send struct to unit
+   
+   //Receive response from unit
+   //write response to struct
+   /*light logic
+      unit battery low?
+      safety interlock tripped?
+      function a on?
+      function b on?
+      function c on?
+      */
+      
+  
 }
 /* ==== End loop ==== */
 
 
 /* ==== Functions ==== */
+// maybe joystick polling goes here
+//maybe light logic goes here
 
 /* ==== End functions ==== */
 
